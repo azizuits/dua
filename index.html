@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0f6b4f"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<title>গুরুত্বপূর্ণ দোয়া সংকলন</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#f6f3ec;--card:#fff;--tx:#1d2b24;--mut:#66756c;--pri:#0f6b4f;--pri2:#e3f1ea;--bd:#ddd8cb;--dan:#b3261e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a16;--card:#1b261f;--tx:#e8efe9;--mut:#9bb0a3;--pri:#4fc79b;--pri2:#21352b;--bd:#2c3d33;--dan:#ff8a80}}
+:root[data-theme="dark"]{--bg:#121a16;--card:#1b261f;--tx:#e8efe9;--mut:#9bb0a3;--pri:#4fc79b;--pri2:#21352b;--bd:#2c3d33;--dan:#ff8a80}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Noto Sans Bengali',system-ui,sans-serif;line-height:1.7}
+header{background:var(--pri);color:#fff;padding:18px 16px;text-align:center}
+header h1{margin:0;font-size:1.35rem}header p{margin:2px 0 0;opacity:.85;font-size:.9rem}
+main{max-width:860px;margin:0 auto;padding:14px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+input,textarea,select{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--tx);font:inherit}
+textarea{min-height:80px}.ar{font-family:Amiri,serif;font-size:1.3rem;direction:rtl}
+.bar input{flex:1 1 200px}.bar select{flex:0 1 150px}
+button{padding:9px 14px;border:0;border-radius:10px;background:var(--pri);color:#fff;font:inherit;cursor:pointer}
+button.s{background:var(--pri2);color:var(--pri)}button.d{background:transparent;color:var(--dan);border:1px solid var(--dan)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-bottom:12px}
+.card h3{margin:0 0 4px}.tag{display:inline-block;background:var(--pri2);color:var(--pri);border-radius:99px;padding:0 10px;font-size:.78rem}
+.arabic{font-family:Amiri,serif;font-size:1.7rem;direction:rtl;text-align:right;line-height:2.1;margin:8px 0}
+.lbl{font-weight:700;color:var(--pri);font-size:.85rem;margin-top:8px}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+img.m,video.m,iframe.m{width:100%;max-height:420px;border-radius:10px;margin-top:8px;border:0}iframe.m{height:420px}
+.chips{display:flex;gap:6px;overflow-x:auto;flex:1 0 100%;padding-bottom:4px}.chip{background:var(--pri2);color:var(--pri);white-space:nowrap}.chip.on{background:var(--pri);color:#fff}.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.tile{background:var(--card);color:var(--tx);border:2px solid var(--bd);padding:10px 2px;text-align:center;font-size:.9rem}.tile.on{border-color:var(--pri);background:var(--pri2);color:var(--pri);font-weight:700}.card{transition:transform .15s,box-shadow .15s}.card:hover{transform:translateY(-2px);box-shadow:0 6px 16px #0002}button:active{transform:scale(.97)}#pv{margin-top:8px}.th{display:block;position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#222,#444);border-radius:10px;margin-top:8px;overflow:hidden;text-decoration:none}.th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.pl{position:absolute;inset:0;margin:auto;width:64px;height:64px;border-radius:50%;background:#e00d;color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;padding-left:4px}.tt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px 70px 44px 16px;color:#fff;font-weight:700;font-size:1.3rem;line-height:1.4;text-shadow:0 2px 8px #0008}.pl{inset:auto 12px 40px auto!important;margin:0!important;width:48px!important;height:48px!important;font-size:22px!important}.th{box-shadow:0 12px 28px #0006,inset 0 0 0 1px #fff3}.th::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 22% 18%,#fff5 0,transparent 42%),radial-gradient(circle at 85% 90%,#0006 0,transparent 55%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath d='M32 4l7 15 15-7-7 15 15 7-15 7 7 15-15-7-7 15-7-15-15 7 7-15-15-7 15-7-7-15 15 7z' fill='none' stroke='white' stroke-opacity='.2'/%3E%3C/svg%3E")}
+.th::after{content:"\1F3AC  ভিডিও";position:absolute;top:10px;left:10px;background:#000a;color:#ffe28a;border:1px solid #ffe28a88;border-radius:99px;padding:1px 12px;font-size:.8rem;font-weight:700}
+.tt{color:#fff6d0;font-size:clamp(1.25rem,4.5vw,1.8rem);transform:perspective(650px) rotateX(14deg) rotateY(-7deg);text-shadow:0 1px 0 #e0bb55,0 2px 0 #d0a944,0 3px 0 #c09834,0 4px 0 #af8726,0 5px 0 #9e771a,0 6px 0 #8d6810,0 9px 10px #0008,0 16px 24px #0007}
+.pl{background:radial-gradient(circle at 32% 28%,#ff8a8a,#e00 55%,#a00)!important;box-shadow:0 4px 0 #800,0 9px 16px #0008,inset 0 2px 3px #fff8}
+.card[data-t=video] [data-a=print],.card[data-t=video] [data-a=copy]{display:none}
+.cp{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;background:#000a;color:#fff;font-size:.85rem}
+.fm label{display:block;margin:10px 0 3px;font-weight:600;font-size:.9rem}
+#msg{color:var(--mut);text-align:center;padding:20px}
+.ov{position:fixed;inset:0;background:#0007;display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:16px;z-index:20}
+.ov.on{display:flex}.box{background:var(--bg);border-radius:16px;padding:16px;max-width:640px;width:100%}
+@media print{header,.bar,.row,.ov{display:none!important}.card{break-inside:avoid;border:0}body{background:#fff;color:#000}}
+</style></head><body>
+<header><h1>🕌 গুরুত্বপূর্ণ দোয়া সংকলন</h1><p>দোয়া, ছবি, ভিডিও ও পিডিএফ</p><button id="lg" class="s" style="margin-top:8px">🔐 এডমিন</button></header>
+<main>
+<div class="bar">
+<input id="q" placeholder="খুঁজুন…"><input type="hidden" id="ft" value=""><div id="chips" class="chips"></div>
+<button id="add" style="display:none">➕ নতুন যোগ করুন</button></div>
+<div id="msg">লোড হচ্ছে…</div><div id="list"></div></main>
+
+<div class="ov" id="lo"><div class="box fm"><h3>এডমিন লগইন</h3><label>ইমেইল</label><input id="l_e" type="email"><label>পাসওয়ার্ড</label><input id="l_p" type="password"><div class="row"><button id="l_ok">লগইন</button><button class="s" id="l_x">বাতিল</button></div><div id="l_err" style="color:var(--dan)"></div></div></div>
+<div class="ov" id="lb" style="align-items:center"><img id="lbi" alt="" style="max-width:100%;max-height:90vh;border-radius:10px"></div>
+<div class="ov" id="ov"><div class="box fm">
+<h3 id="ft2">নতুন যোগ করুন</h3>
+<label>কী যোগ করতে চান?</label><div class="tiles" id="tiles"><button class="tile" data-t="dua">🤲<br>দোয়া</button><button class="tile" data-t="image">🖼️<br>ছবি</button><button class="tile" data-t="video">🎬<br>ভিডিও</button><button class="tile" data-t="pdf">📄<br>পিডিএফ</button></div><input type="hidden" id="f_type" value="dua">
+<label>শিরোনাম *</label><input id="f_title">
+<div id="dw"><label>উদ্দেশ্য</label><textarea id="f_purpose"></textarea>
+<label>আরবি</label><textarea id="f_arabic" class="ar"></textarea>
+<label>উচ্চারণ</label><textarea id="f_pron"></textarea>
+<label>অর্থ</label><textarea id="f_meaning"></textarea>
+<label>ফযিলত</label><textarea id="f_fazilat"></textarea></div>
+<div id="vw"><label>ভিডিও লিংক (YouTube ইত্যাদি)</label><input id="f_link" type="url" placeholder="https://…"><label>থাম্বনেইল ছবি (ঐচ্ছিক — Google Flow-এ বানানো ছবি)</label><input type="file" id="f_cover" accept="image/*"><div id="cc" style="color:var(--mut);font-size:.85rem"></div></div>
+<div id="mw"><label id="fl">ফাইল আপলোড</label><input type="file" id="f_file"><div id="cur" style="color:var(--mut);font-size:.85rem"></div><div id="pv"></div></div>
+<div class="row"><button id="save">সংরক্ষণ</button><button class="s" id="cancel">বাতিল</button></div>
+<div id="err" style="color:var(--dan);margin-top:6px"></div>
+</div></div>
+
+<script>
+const $=id=>document.getElementById(id);
+let db=null,assets=null,isAdmin=false,items=[],editing=null,col=null;
+const T={dua:'দোয়া',image:'ছবি',video:'ভিডিও',pdf:'পিডিএফ'};
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const nl=s=>esc(s).replace(/\n/g,'<br>');
+
+function render(){chips();
+  const q=$('q').value.trim().toLowerCase(),t=$('ft').value;
+  const r=items.filter(i=>(!t||i.type===t)&&(!q||[i.title,i.purpose,i.arabic,i.meaning,i.pron].join(' ').toLowerCase().includes(q)));
+  $('msg').style.display=r.length?'none':'block';
+  if(!r.length)$('msg').textContent=items.length?'কিছু পাওয়া যায়নি':'এখনো কিছু যোগ করা হয়নি';
+  $('list').innerHTML=r.map(i=>`<div class="card" id="c_${i.id}" data-t="${i.type}"><span class="tag">${T[i.type]||''}</span><h3>${esc(i.title)}</h3>
+  ${i.purpose?`<div class="lbl">উদ্দেশ্য</div>${nl(i.purpose)}`:''}
+  ${i.arabic?`<div class="arabic">${nl(i.arabic)}</div>`:''}
+  ${i.pron?`<div class="lbl">উচ্চারণ</div>${nl(i.pron)}`:''}
+  ${i.meaning?`<div class="lbl">অর্থ</div>${nl(i.meaning)}`:''}
+  ${i.fazilat?`<div class="lbl">ফযিলত</div>${nl(i.fazilat)}`:''}
+  ${media(i)}
+  <div class="row"><button class="s" data-a="share" data-id="${i.id}">📤 শেয়ার</button>
+  <button class="s" data-a="print" data-id="${i.id}">🖨️ প্রিন্ট</button>
+  <button class="s" data-a="copy" data-id="${i.id}">📋 কপি</button>
+  <a href="https://wa.me/?text=${encodeURIComponent(txt(i))}" target="_blank" rel="noopener"><button class="s">WhatsApp</button></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?quote=${encodeURIComponent(txt(i))}&u=${encodeURIComponent(location.href)}" target="_blank" rel="noopener"><button class="s">Facebook</button></a>
+  <a href="https://t.me/share/url?url=${encodeURIComponent(location.href)}&text=${encodeURIComponent(txt(i))}" target="_blank" rel="noopener"><button class="s">Telegram</button></a>
+  ${isAdmin?`<button data-a="edit" data-id="${i.id}">✏️ এডিট</button><button class="d" data-a="del" data-id="${i.id}">🗑️ ডিলিট</button>`:''}
+  </div></div>`).join('');
+}
+function media(i){
+  if(i.type==='video'&&!i.url&&i.link){const y=yt(i.link);return `<a class="th" style="${bg(i.title)}" href="${esc(i.link)}" target="_blank" rel="noopener"><span class="tt">${esc(i.title)}</span>${i.coverUrl?`<img src="${esc(i.coverUrl)}" alt="">`:y?`<img src="https://img.youtube.com/vi/${y}/hqdefault.jpg" alt="" onerror="this.remove()">`:''}<span class="pl">▶</span><span class="cp">${y?'YouTube-এ দেখুন':'ভিডিও দেখুন'}</span></a>`}
+  if(!i.url)return'';
+  if(i.type==='image')return`<img class="m" data-zoom style="cursor:zoom-in" src="${esc(i.url)}" alt="${esc(i.title)}">`;
+  if(i.type==='video')return`<div class="th" data-play="${esc(i.url)}" style="${bg(i.title)};cursor:pointer"><span class="tt">${esc(i.title)}</span>${i.coverUrl?`<img src="${esc(i.coverUrl)}" alt="">`:''}<span class="pl">▶</span><span class="cp">ভিডিও চালান</span></div>`;
+  if(i.type==='pdf')return`<iframe class="m" src="${esc(i.url)}"></iframe><div class="row"><a href="${esc(i.url)}" target="_blank" rel="noopener"><button class="s">📄 পিডিএফ খুলুন</button></a></div>`;
+  return'';
+}
+const txt=i=>[i.title,i.arabic,i.pron&&('উচ্চারণ: '+i.pron),i.meaning&&('অর্থ: '+i.meaning),i.fazilat&&('ফযিলত: '+i.fazilat)].filter(Boolean).join('\n\n');
+
+$('list').addEventListener('click',async e=>{
+  const b=e.target.closest('button[data-a]');if(!b)return;
+  const i=items.find(x=>x.id===b.dataset.id);if(!i)return;
+  const a=b.dataset.a;
+  if(a==='share'){try{if(navigator.share)await navigator.share({title:i.title,text:txt(i)});else{await navigator.clipboard.writeText(txt(i));alert('কপি হয়েছে')}}catch(_){}}
+  if(a==='copy'){try{await navigator.clipboard.writeText(txt(i));b.textContent='✅ কপি হয়েছে'}catch(_){alert('কপি করা যায়নি')}}
+  if(a==='print'){document.querySelectorAll('.card').forEach(c=>c.style.display=c.id==='c_'+i.id?'':'none');try{window.print()}catch(_){}setTimeout(()=>document.querySelectorAll('.card').forEach(c=>c.style.display=''),500)}
+  if(a==='edit')openForm(i);
+  if(a==='del'&&confirm('"'+i.title+'" ডিলিট করবেন?')){try{{const {error}=await sb.from('items').delete().eq('id',i.id);if(error)throw error}}catch(er){alert('ডিলিট ব্যর্থ: '+(er.message||er.code))}}
+});
+
+function openForm(i){
+  editing=i||null;$('ft2').textContent=i?'এডিট করুন':'নতুন যোগ করুন';
+  $('f_type').value=i?.type||$('ft').value||'dua';$('f_title').value=i?.title||'';$('f_purpose').value=i?.purpose||'';
+  $('f_arabic').value=i?.arabic||'';$('f_pron').value=i?.pron||'';$('f_meaning').value=i?.meaning||'';$('f_fazilat').value=i?.fazilat||'';
+  $('f_file').value='';$('f_link').value=i?.link||'';$('f_cover').value='';$('cc').textContent=i?.coverUrl?'বর্তমান থাম্বনেইল আছে':'';$('pv').innerHTML='';$('cur').textContent=i?.fileName?'বর্তমান ফাইল: '+i.fileName:'';$('err').textContent='';
+  togMedia();$('ov').classList.add('on');
+}
+function togMedia(){const t=$('f_type').value;$('mw').style.display=t==='dua'?'none':'block';$('dw').style.display=t==='dua'?'block':'none';$('vw').style.display=t==='video'?'block':'none';$('f_file').accept=t==='image'?'image/*':t==='video'?'video/*':'application/pdf';$('fl').textContent=t==='image'?'ছবি আপলোড করুন':t==='video'?'অথবা ভিডিও ফাইল আপলোড করুন':'পিডিএফ আপলোড করুন';document.querySelectorAll('.tile').forEach(b=>b.classList.toggle('on',b.dataset.t===t))}
+function chips(){const c={'':items.length};items.forEach(i=>c[i.type]=(c[i.type]||0)+1);$('chips').innerHTML=[['','🗂️ সব'],['dua','🤲 দোয়া'],['image','🖼️ ছবি'],['video','🎬 ভিডিও'],['pdf','📄 পিডিএফ']].map(([k,l])=>`<button class="chip${$('ft').value===k?' on':''}" data-k="${k}">${l} (${c[k]||0})</button>`).join('')}
+const bg=t=>{let h=0;for(const c of String(t))h=(h*31+c.charCodeAt(0))%360;return`background:linear-gradient(135deg,hsl(${h},55%,26%),hsl(${(h+45)%360},60%,44%))`};
+const yt=u=>{const m=String(u).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:''};
+$('tiles').onclick=e=>{const b=e.target.closest('.tile');if(b){$('f_type').value=b.dataset.t;$('f_file').value='';$('pv').innerHTML='';togMedia()}};
+$('chips').onclick=e=>{const b=e.target.closest('.chip');if(b){$('ft').value=b.dataset.k;render()}};
+$('f_file').onchange=()=>{const f=$('f_file').files[0];$('pv').innerHTML=!f?'':$('f_type').value==='image'?`<img class="m" src="${URL.createObjectURL(f)}" alt="">`:`<div>📎 ${esc(f.name)} (${(f.size/1048576).toFixed(1)} MB)</div>`};
+$('list').addEventListener('click',e=>{const m=e.target.closest('img[data-zoom]');if(m){$('lbi').src=m.src;$('lb').classList.add('on')}});
+$('list').addEventListener('click',e=>{const p=e.target.closest('[data-play]');if(p){const v=document.createElement('video');v.className='m';v.controls=true;v.autoplay=true;v.src=p.dataset.play;p.replaceWith(v)}});
+$('lb').onclick=()=>$('lb').classList.remove('on');$('cancel').onclick=()=>$('ov').classList.remove('on');
+$('add').onclick=()=>openForm();$('q').oninput=render;
+
+$('save').onclick=async()=>{
+  const title=$('f_title').value.trim();if(!title){$('err').textContent='শিরোনাম দিন';return}
+  $('save').disabled=true;$('err').textContent='সংরক্ষণ হচ্ছে…';
+  try{
+    const type=$('f_type').value;
+    const d={type,title,purpose:$('f_purpose').value.trim(),arabic:$('f_arabic').value.trim(),pron:$('f_pron').value.trim(),meaning:$('f_meaning').value.trim(),fazilat:$('f_fazilat').value.trim(),
+      link:$('f_link').value.trim(),url:editing?.url||'',assetId:editing?.assetId||'',fileName:editing?.fileName||'',createdAt:editing?.createdAt||Date.now(),updatedAt:Date.now()};
+    const f=$('f_file').files[0];if(type!=='video')d.link='';if(type!=='dua'&&!f&&!d.url&&!d.link)throw new Error(type==='video'?'ভিডিও লিংক দিন অথবা ফাইল আপলোড করুন':'ফাইল আপলোড করুন');
+    if(type==='dua'){d.url='';d.assetId='';d.fileName=''}
+    if(f&&type!=='dua'){
+      if(!assets)throw new Error('ফাইল আপলোড এখন সম্ভব নয়');
+      $('err').textContent='⏳ আপলোড হচ্ছে, অপেক্ষা করুন…';const r=await up(f);
+      if(editing?.assetId){try{await rm(editing.assetId)}catch(_){}}
+      d.url=r.url;d.assetId=r.id;d.fileName=f.name;
+    }
+    const cf=$('f_cover').files[0];d.coverUrl=type==='video'?(editing?.coverUrl||''):'';d.coverId=type==='video'?(editing?.coverId||''):'';
+    if(type==='video'&&cf){if(!assets)throw new Error('আপলোড সম্ভব নয়');$('err').textContent='⏳ থাম্বনেইল আপলোড হচ্ছে…';const cr=await up(cf);if(editing?.coverId){try{await rm(editing.coverId)}catch(_){}}d.coverUrl=cr.url;d.coverId=cr.id}
+    const id=editing?.id||('i'+Date.now().toString(36)+Math.random().toString(36).slice(2,6));
+    {const {error}=await sb.from('items').upsert({id,data:d});if(error)throw error}
+    $('ov').classList.remove('on');
+  }catch(e){$('err').textContent='ত্রুটি: '+(e.message||e.code||e)}
+  $('save').disabled=false;
+};
+
+const CFG={url:'qqpmhrxhiumkgzeukfsn',key:'ap-southeast-1'};
+const sb=supabase.createClient(CFG.url,CFG.key);
+assets=true;
+const up=async f=>{const p=Date.now()+'-'+Math.random().toString(36).slice(2,8)+'.'+((f.name.split('.').pop()||'bin').replace(/[^\w]/g,''));const {error}=await sb.storage.from('media').upload(p,f,{contentType:f.type});if(error)throw error;return{id:p,url:sb.storage.from('media').getPublicUrl(p).data.publicUrl}};
+const rm=p=>sb.storage.from('media').remove([p]);
+async function load(){const {data,error}=await sb.from('items').select('id,data');if(error){$('msg').textContent='ত্রুটি: '+error.message;return}items=data.map(r=>({id:r.id,...r.data})).sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));render()}
+function auth(s){isAdmin=!!s;$('add').style.display=isAdmin?'':'none';$('lg').textContent=isAdmin?'🚪 লগআউট':'🔐 এডমিন';render()}
+$('lg').onclick=async()=>{if(isAdmin){await sb.auth.signOut();return}$('lo').classList.add('on')};
+$('l_x').onclick=()=>$('lo').classList.remove('on');
+$('l_ok').onclick=async()=>{const {error}=await sb.auth.signInWithPassword({email:$('l_e').value.trim(),password:$('l_p').value});if(error){$('l_err').textContent='লগইন ব্যর্থ: '+error.message;return}$('lo').classList.remove('on')};
+sb.auth.onAuthStateChange((_e,s)=>auth(s));
+sb.auth.getSession().then(({data})=>auth(data.session));
+load();
+sb.channel('items-rt').on('postgres_changes',{event:'*',schema:'public',table:'items'},load).subscribe();
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
+</script></body></html>
