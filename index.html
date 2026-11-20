@@ -162,7 +162,7 @@ const up=async f=>{const p=Date.now()+'-'+Math.random().toString(36).slice(2,8)+
 const rm=p=>sb.storage.from('media').remove([p]);
 async function load(){const {data,error}=await sb.from('items').select('id,data');if(error){$('msg').textContent='ত্রুটি: '+error.message;return}items=data.map(r=>({id:r.id,...r.data})).sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));render()}
 function auth(s){isAdmin=!!s;$('add').style.display=isAdmin?'':'none';$('lg').textContent=isAdmin?'🚪 লগআউট':'🔐 এডমিন';render()}
-$('lg').onclick=async()=>{if(isAdmin){await sb.auth.signOut();return}$('lo').classList.add('on')};
+$('lg').onclick=async()=>{if(isAdmin){try{await sb.auth.signOut({scope:'local'})}catch(_){}try{Object.keys(localStorage).filter(k=>k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k))}catch(_){}auth(null);return}$('lo').classList.add('on')};
 $('l_x').onclick=()=>$('lo').classList.remove('on');
 $('l_ok').onclick=async()=>{const {error}=await sb.auth.signInWithPassword({email:$('l_e').value.trim(),password:$('l_p').value});if(error){$('l_err').textContent='লগইন ব্যর্থ: '+error.message;return}$('lo').classList.remove('on')};
 sb.auth.onAuthStateChange((_e,s)=>auth(s));
