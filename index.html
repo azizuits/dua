@@ -40,16 +40,16 @@ img.m,video.m,iframe.m{width:100%;max-height:420px;border-radius:10px;margin-top
 <header><h1>🕌 গুরুত্বপূর্ণ দোয়া সংকলন</h1><p>দোয়া, ছবি, ভিডিও ও পিডিএফ</p><button id="lg" class="s" style="margin-top:8px">🔐 এডমিন</button></header>
 <main>
 <div class="bar">
-<input id="q" placeholder="খুঁজুন…"><input type="hidden" id="ft" value=""><div id="chips" class="chips"></div>
+<input id="q" type="search" name="dua-search" autocomplete="off" placeholder="খুঁজুন…"><input type="hidden" id="ft" value=""><div id="chips" class="chips"></div>
 <button id="add" style="display:none">➕ নতুন যোগ করুন</button></div>
 <div id="msg">লোড হচ্ছে…</div><div id="list"></div></main>
 
-<div class="ov" id="lo"><div class="box fm"><h3>এডমিন লগইন</h3><label>ইমেইল</label><input id="l_e" type="email"><label>পাসওয়ার্ড</label><input id="l_p" type="password"><div class="row"><button id="l_ok">লগইন</button><button class="s" id="l_x">বাতিল</button></div><div id="l_err" style="color:var(--dan)"></div></div></div>
+<div class="ov" id="lo"><div class="box fm"><h3>এডমিন লগইন</h3><label>ইমেইল</label><input id="l_e" type="email" name="email" autocomplete="username"><label>পাসওয়ার্ড</label><input id="l_p" type="password" name="password" autocomplete="current-password"><div class="row"><button id="l_ok">লগইন</button><button class="s" id="l_x">বাতিল</button></div><div id="l_err" style="color:var(--dan)"></div></div></div>
 <div class="ov" id="lb" style="align-items:center"><img id="lbi" alt="" style="max-width:100%;max-height:90vh;border-radius:10px"></div>
 <div class="ov" id="ov"><div class="box fm">
 <h3 id="ft2">নতুন যোগ করুন</h3>
 <label>কী যোগ করতে চান?</label><div class="tiles" id="tiles"><button class="tile" data-t="dua">🤲<br>দোয়া</button><button class="tile" data-t="image">🖼️<br>ছবি</button><button class="tile" data-t="video">🎬<br>ভিডিও</button><button class="tile" data-t="pdf">📄<br>পিডিএফ</button></div><input type="hidden" id="f_type" value="dua">
-<label>শিরোনাম *</label><input id="f_title">
+<label>শিরোনাম *</label><input id="f_title" name="dua-title" autocomplete="off">
 <div id="dw"><label>উদ্দেশ্য</label><textarea id="f_purpose"></textarea>
 <label>আরবি</label><textarea id="f_arabic" class="ar"></textarea>
 <label>উচ্চারণ</label><textarea id="f_pron"></textarea>
@@ -153,7 +153,7 @@ $('save').onclick=async()=>{
   $('save').disabled=false;
 };
 
-const CFG={url:'qqpmhrxhiumkgzeukfsn',key:'ap-southeast-1'};
+const CFG={url:'https://qqpmhrxhiumkgzeukfsn.supabase.co',key:'sb_publishable_KvM_PnqE5zq1Mv1BA9E04g_bX0m43FK'};
 const sb=supabase.createClient(CFG.url,CFG.key);
 assets=true;
 const up=async f=>{const p=Date.now()+'-'+Math.random().toString(36).slice(2,8)+'.'+((f.name.split('.').pop()||'bin').replace(/[^\w]/g,''));const {error}=await sb.storage.from('media').upload(p,f,{contentType:f.type});if(error)throw error;return{id:p,url:sb.storage.from('media').getPublicUrl(p).data.publicUrl}};
